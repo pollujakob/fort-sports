@@ -1,0 +1,771 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #343434 0%, #212121 100%);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.logo-text {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FFDD04;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #343434 0%, #212121 100%);
+    padding: 120px 0 80px;
+    color: #fff;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #FFDD04;
+    color: #333;
+}
+
+.btn-primary:hover {
+    background: #CCB800;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-secondary:hover {
+    background: #fff;
+    color: #333;
+}
+
+/* Phone Mockup */
+.phone-mockup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-screen {
+    width: 280px;
+    height: 500px;
+    background: #fff;
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.app-preview {
+    background: #343434;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    background: #343434;
+    padding: 15px;
+    flex-shrink: 0;
+}
+
+.app-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 8px;
+}
+
+.tab {
+    padding: 6px 12px;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    font-size: 10px;
+    color: #fff;
+    background: transparent;
+    flex: 1;
+    text-align: center;
+}
+
+.tab.active {
+    background: #CCB800;
+    border-color: #CCB800;
+    font-weight: 500;
+}
+
+.choose-sport-btn {
+    width: 100%;
+    padding: 8px;
+    background: #333333;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sports-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 15px;
+    flex: 1;
+}
+
+.sport-card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 12px 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+}
+
+.sport-card:hover {
+    transform: translateY(-2px);
+}
+
+.sport-icon {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.sport-name {
+    font-size: 11px;
+    color: #5B5B5B;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.feature-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Sports Section */
+.sports {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.sports-grid-large {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.sport-card-large {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.sport-card-large:hover {
+    transform: translateY(-10px);
+}
+
+.sport-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+}
+
+.sport-card-large.handball .sport-bg {
+    background-image: url('../assets/handball-bg.png');
+}
+
+.sport-card-large.volleyball .sport-bg {
+    background-image: url('../assets/volleyball-bg.png');
+}
+
+.sport-card-large.basketball .sport-bg {
+    background-image: url('../assets/basketball-bg.png');
+}
+
+.sport-card-large.soccer .sport-bg {
+    background-image: url('../assets/soccer-bg.png');
+}
+
+.sport-content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(52, 52, 52, 0.9) 0%, rgba(33, 33, 33, 0.9) 100%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.sport-icon-large {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sport-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sport-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.sport-features {
+    list-style: none;
+    text-align: center;
+}
+
+.sport-features li {
+    padding: 0.5rem 0;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sport-features li:last-child {
+    border-bottom: none;
+}
+
+/* Download Section */
+.download {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #343434 0%, #212121 100%);
+    color: #fff;
+}
+
+.download-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.download-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.download-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.download-btn {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+}
+
+.app-store-badge {
+    height: 83px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.app-store-badge:hover {
+    transform: scale(1.05);
+}
+
+.download-image {
+    display: flex;
+    justify-content: center;
+}
+
+.app-logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-description {
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.footer-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: #FFDD04;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.footer-copyright {
+    opacity: 0.7;
+}
+
+/* Privacy Policy Page Styles */
+.privacy-header {
+    background: linear-gradient(135deg, #343434 0%, #212121 100%);
+    padding: 120px 0 60px;
+    color: #fff;
+    text-align: center;
+}
+
+.privacy-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.privacy-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.privacy-content {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.privacy-section {
+    margin-bottom: 3rem;
+}
+
+.privacy-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #FFDD04;
+    padding-bottom: 0.5rem;
+}
+
+.privacy-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 2rem 0 1rem 0;
+}
+
+.privacy-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.privacy-section ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.privacy-section li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.back-to-home {
+    display: inline-block;
+    background: #FFDD04;
+    color: #333;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+.back-to-home:hover {
+    background: #CCB800;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sports-grid-large {
+        grid-template-columns: 1fr;
+    }
+    
+    .download-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .download-buttons {
+        justify-content: center;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .phone-screen {
+        width: 250px;
+        height: 450px;
+        padding: 12px;
+    }
+    
+    .app-store-badge {
+        height: 60px;
+    }
+    
+    .privacy-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .sport-content {
+        padding: 1.5rem;
+    }
+    
+    .phone-screen {
+        width: 220px;
+        height: 400px;
+        padding: 10px;
+    }
+    
+    .app-header {
+        padding: 12px;
+    }
+    
+    .sports-grid {
+        padding: 12px;
+        gap: 8px;
+    }
+    
+    .sport-card {
+        padding: 10px 6px;
+        min-height: 70px;
+    }
+    
+    .sport-icon {
+        font-size: 1.2rem;
+    }
+    
+    .sport-name {
+        font-size: 10px;
+    }
+    
+    .app-store-badge {
+        height: 50px;
+    }
+    
+    .privacy-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature-card,
+.sport-card-large,
+.download-btn {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hover effects */
+.feature-card:hover,
+.sport-card-large:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFDD04;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #CCB800;
+}
