@@ -599,6 +599,151 @@ body {
     transform: translateY(-2px);
 }
 
+/* Support Page Styles */
+.support-header {
+    background: linear-gradient(135deg, #343434 0%, #212121 100%);
+    padding: 120px 0 60px;
+    color: #fff;
+    text-align: center;
+}
+
+.support-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.support-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.support-content {
+    padding: 60px 0;
+}
+
+.support-section {
+    margin-bottom: 60px;
+}
+
+.support-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.support-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-method {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+}
+
+.contact-method h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-method p {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.contact-method a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-method a:hover {
+    text-decoration: underline;
+}
+
+.faq-item {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e9ecef;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.faq-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.troubleshooting-item {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e9ecef;
+}
+
+.troubleshooting-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.troubleshooting-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.troubleshooting-item li {
+    color: #666;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.troubleshooting-item li:before {
+    content: "•";
+    color: #007bff;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.back-to-home {
+    display: inline-block;
+    background: #343434;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-home:hover {
+    background: #212121;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -720,6 +865,31 @@ body {
     
     .privacy-title {
         font-size: 1.8rem;
+    }
+}
+
+/* Responsive Design for Support Page */
+@media (max-width: 768px) {
+    .support-title {
+        font-size: 2rem;
+    }
+    
+    .support-subtitle {
+        font-size: 1rem;
+    }
+    
+    .contact-methods {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .support-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .faq-item,
+    .troubleshooting-item {
+        padding: 1.5rem;
     }
 }
 
