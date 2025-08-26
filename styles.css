@@ -329,19 +329,19 @@ body {
 }
 
 .sport-card-large.handball .sport-bg {
-    background-image: url('../assets/handball-bg.png');
+    background-image: url('handball-bg.png');
 }
 
 .sport-card-large.volleyball .sport-bg {
-    background-image: url('../assets/volleyball-bg.png');
+    background-image: url('volleyball-bg.png');
 }
 
 .sport-card-large.basketball .sport-bg {
-    background-image: url('../assets/basketball-bg.png');
+    background-image: url('basketball-bg.png');
 }
 
 .sport-card-large.soccer .sport-bg {
-    background-image: url('../assets/soccer-bg.png');
+    background-image: url('soccer-bg.png');
 }
 
 .sport-content {
